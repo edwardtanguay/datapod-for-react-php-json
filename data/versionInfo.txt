@@ -1,0 +1,2 @@
+2025-04-16 11:34:05 added qcli.message
+2025-04-16 11:54:49 added qfil.getLinesFromFile
