@@ -5,9 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --port 3212 --open",
-		"cp": "cd scripts/commands && php create-page.php",
-		"pd": "cd scripts/commands && php parse-data.php",
-		"learn": "cd scripts/commands && php cmd-learn.php",
+		"cp": "cd scripts/commands && php create_page.php",
+		"pd": "cd scripts/commands && php parse_data.php",
+		"learn": "cd scripts/commands && php cmd_learn.php",
 		"gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
 		"backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/datapod-for-react-php-json-$(date +%F-%H-%M-%S).zip\"'",
 		"build": "tsc && vite build",
