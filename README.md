@@ -12,7 +12,11 @@ This is a simple datapod template for a local site that displays data from a JSO
 -   `npm run api`
 -   install [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 -   test API with file: `test.rest`
--   API currently has GETs, PUT, DELETE and POST for model persons that reads/writes to JSON file
+-   API currently has GETs, PUT, DELETE and POST for model persons that reads/writes to datasource
+-   datasource can currently be
+    -   JSON file
+    -   SQLite database
+-    switch datasource at top of file: `api/index.php`
 
 ## More Datapod templates and sites
 

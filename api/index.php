@@ -1,5 +1,6 @@
 <?php
-require_once 'persons_model_json.php';
+// require_once 'persons_model_json.php';
+require_once 'persons_model_sqlite.php';
 
 $request_method = $_SERVER['REQUEST_METHOD'];
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
