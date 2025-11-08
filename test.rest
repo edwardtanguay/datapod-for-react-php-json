@@ -1,0 +1,40 @@
+@url = http://localhost:3312
+
+### GET PERSONS
+GET {{url}}/persons
+
+### GET PERSON
+GET {{url}}/persons/82Jks3
+
+### GET PERSON
+GET {{url}}/persons/jwiEs3
+
+### GET NON-EXISTENT PERSON
+GET {{url}}/persons/nnnnn
+
+### DELETE PERSON
+DELETE {{url}}/persons/hfBkiQ
+
+### DELETE NON-EXISTENT PERSON
+DELETE {{url}}/persons/nnnnn
+
+### CREATE PERSON
+POST {{url}}/persons
+content-type: application/json
+	
+{
+	"firstName": "Emily222",
+	"lastName": "Christensen",
+	"age": 51
+}
+
+### UPDATE PERSON
+PUT {{url}}/persons
+content-type: application/json
+	
+{
+	"id": "bhtcYH",
+	"firstName": "Emily-corrected",
+	"lastName": "Christensen",
+	"age": 51
+}

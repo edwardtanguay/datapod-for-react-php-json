@@ -1,0 +1,27 @@
+
+	case 'GET /':
+		header('Content-Type: text/html; charset=utf-8');
+		echo '
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PHP API</title>
+	<style>
+		body { font-family: Arial, sans-serif; margin: 2em; }
+		code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+	</style>
+</head>
+<body>
+    <h1>PHP API</h1>
+    <p><code>GET /</code> this page</p>
+    <p><code>GET /infos</code> get infos</p>
+</body>
+</html>';
+		break;
+	case 'GET /info':
+		echo json_encode([
+		'timestamp' => date('Y-m-d H:i:s'),
+		'info' => 'Some additional info',
+		'version' => '1.0.0']);
+		break;
