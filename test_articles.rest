@@ -32,7 +32,7 @@ PUT {{url}}/articles
 content-type: application/json
 
 {
-	"suuid": "Wdc6hO",
-	"description": "Wireless keyboard",
+	"suuid": "CRoZrE",
+	"description": "Wireless Pencil",
 	"price": 39.99
 }

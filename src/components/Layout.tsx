@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { Menu, X, Home, FileText, Info } from "lucide-react";
+import { Menu, X, Home, FileText, Info, Box } from "lucide-react";
 
 export default function Layout() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	const menuItems = [
 		{ name: "Welcome", path: "/", icon: Home },
+		{ name: "Customers", path: "/customers", icon: Box },
+		{ name: "Articles", path: "/articles", icon: Box },
+		{ name: "Orders", path: "/orders", icon: Box },
 		{ name: "Documents", path: "/documents", icon: FileText },
 		{ name: "About", path: "/about", icon: Info },
 	];
@@ -28,10 +31,9 @@ export default function Layout() {
 										key={item.path}
 										to={item.path}
 										className={({ isActive }) =>
-											`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${
-												isActive
-													? "bg-slate-800 text-white shadow-md"
-													: "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+											`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${isActive
+												? "bg-slate-800 text-white shadow-md"
+												: "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
 											}`
 										}
 									>
@@ -55,11 +57,10 @@ export default function Layout() {
 				</div>
 
 				<div
-					className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-						isMenuOpen
+					className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen
 							? "max-h-[600px] opacity-100"
 							: "max-h-0 opacity-0"
-					}`}
+						}`}
 				>
 					<nav className="px-4 pb-4 space-y-1 bg-white border-t border-slate-200">
 						{menuItems.map((item) => {
@@ -70,10 +71,9 @@ export default function Layout() {
 									to={item.path}
 									onClick={() => setIsMenuOpen(false)}
 									className={({ isActive }) =>
-										`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${
-											isActive
-												? "bg-slate-800 text-white shadow-md"
-												: "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+										`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${isActive
+											? "bg-slate-800 text-white shadow-md"
+											: "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
 										}`
 									}
 								>

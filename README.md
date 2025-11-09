@@ -2,12 +2,12 @@
 
 This is a simple datapod template for a local site that displays data from a JSON file, which is created by a PHP script that parses a text file.
 
+<img width="1486" height="719" alt="grafik" src="https://github.com/user-attachments/assets/c5e49a36-2b4a-4000-be0c-85e1441c1ec0" />
+
 ## Compatibility
 
 -   ✔️ tested on Windows
 -   ✔️ tested on Ubuntu
-
-<img width="1486" height="719" alt="grafik" src="https://github.com/user-attachments/assets/c5e49a36-2b4a-4000-be0c-85e1441c1ec0" />
 
 ## API
 
