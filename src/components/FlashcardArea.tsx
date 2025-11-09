@@ -4,6 +4,7 @@ export const FlashcardArea = () => {
 	const { frontendFlashcards } = useTypedStoreState(
 		(state) => state.flashcardModel
 	);
+	const { message } = useTypedStoreState((state) => state.mainModel);
 	const { toggleFrontendFlashcardThunk } =
 		useTypedStoreActions((actions) => actions.flashcardModel);
 
@@ -12,6 +13,7 @@ export const FlashcardArea = () => {
 			<h2 className="text-xl mb-3">
 				There are {frontendFlashcards.length} flashcards:{" "}
 			</h2>
+			<p className="mb-6 text-sm italic">{message}</p>
 			{frontendFlashcards.map((ff) => {
 				return (
 					<div className="mb-4 w-full md:w-[35rem]" key={ff.suuid}>

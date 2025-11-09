@@ -23,7 +23,7 @@ export const mainModel: MainModel = {
 
 	// thunks
 	initialize: thunk((actions, _, helpers) => {
-		actions.setMessage("Welcome to this site.");
+		actions.setMessage("Click on the flashcards to flip them over!");
 		helpers.getStoreActions().flashcardModel.loadFlashcardsThunk();
 	}),
 };

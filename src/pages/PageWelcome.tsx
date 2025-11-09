@@ -1,13 +1,14 @@
-import { FlashcardArea } from "../components/FlashcardArea";
-import { useTypedStoreState } from "../store/hooks";
+import { Home } from 'lucide-react';
+import ContentWrapper from '../components/ContentWrapper';
+import { FlashcardArea } from '../components/FlashcardArea';
 
-export const PageWelcome = () => {
-	const { message } = useTypedStoreState((state) => state.mainModel);
 
-	return (
-		<>
-			<p className="mb-3">{message}</p>
-			<FlashcardArea />
-		</>
-	);
-};
+export default function PageWelcome() {
+
+  return (
+    <ContentWrapper icon={<Home size={32} className="text-slate-800" />} title="Welcome" >
+      <FlashcardArea />
+    </ContentWrapper>
+
+  );
+}
