@@ -1,0 +1,38 @@
+@url = http://localhost:3312
+
+### GET ARTICLES
+GET {{url}}/articles
+
+### GET ARTICLE
+GET {{url}}/articles/E3GsVl
+
+### GET ARTICLE
+GET {{url}}/articles/jwiEs3
+
+### GET NON-EXISTENT ARTICLE
+GET {{url}}/articles/nnnnn
+
+### DELETE ARTICLE
+DELETE {{url}}/articles/ypauou
+
+### DELETE NON-EXISTENT ARTICLE
+DELETE {{url}}/articles/nnnnn
+
+### CREATE ARTICLE
+POST {{url}}/articles
+content-type: application/json
+
+{
+	"description": "Wireless mouse",
+	"price": 78.23
+}
+
+### UPDATE ARTICLE
+PUT {{url}}/articles
+content-type: application/json
+
+{
+	"suuid": "Wdc6hO",
+	"description": "Wireless keyboard",
+	"price": 39.99
+}

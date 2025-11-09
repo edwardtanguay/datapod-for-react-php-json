@@ -1,0 +1,41 @@
+@url = http://localhost:3312
+
+### GET ORDERS
+GET {{url}}/orders
+
+### GET ORDER
+GET {{url}}/orders/E3GsVl
+
+### GET ORDER
+GET {{url}}/orders/jwiEs3
+
+### GET NON-EXISTENT ORDER
+GET {{url}}/orders/nnnnn
+
+### DELETE ORDER
+DELETE {{url}}/orders/ypauou
+
+### DELETE NON-EXISTENT ORDER
+DELETE {{url}}/orders/nnnnn
+
+### CREATE ORDER
+POST {{url}}/orders
+content-type: application/json
+
+{
+	"customer_suuid": "Cu1234",
+	"article_suuid": "Ar5678",
+	"amount": 3
+}
+
+### UPDATE ORDER
+PUT {{url}}/orders
+content-type: application/json
+
+{
+	"suuid": "Wdc6hO",
+	"customer_suuid": "Cu9999",
+	"article_suuid": "Ar1111",
+	"amount": 2
+}
+

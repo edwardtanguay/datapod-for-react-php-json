@@ -1,10 +1,9 @@
 <?php
-require_once '../scripts/qtools/qfil.php';
-require_once '../scripts/qtools/qstr.php';
+require_once __DIR__ . '/../../scripts/qtools/qstr.php';
 
 class persons_model
 {
-	private static $dbPath = "../parseddata/main.sqlite";
+	private static $dbPath = "../data/main.sqlite";
 	private static $tableName = "persons";
 
 	private static function getConnection(): PDO

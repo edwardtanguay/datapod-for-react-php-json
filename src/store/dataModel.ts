@@ -1,5 +1,5 @@
 import { FlashcardSchema, FrontendFlashcard } from "../types";
-import rawFlashcards from "../../parseddata/flashcards.json";
+import rawFlashcards from "../../data/flashcards.json";
 
 export const getFlashcards = () => {
 	const frontendFlashcards: FrontendFlashcard[] = [];

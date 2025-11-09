@@ -1,7 +1,7 @@
 <?php
 require_once '../scripts/qtools/qfil.php';
 
-$persons = qfil::readJsonFile("../parseddata/persons.json", true);
+$persons = qfil::readJsonFile("../data/persons.json", true);
 
 $person = (object) [
 	'firstName' => 'Robert',
@@ -10,4 +10,4 @@ $person = (object) [
 ];
 
 $persons[] = $person;
-qfil::saveToJsonFile($persons, "../parseddata/persons.json");
+qfil::saveToJsonFile($persons, "../data/persons.json");

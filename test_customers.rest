@@ -1,0 +1,46 @@
+@url = http://localhost:3312
+
+### GET CUSTOMERS
+GET {{url}}/customers
+
+### GET CUSTOMER
+GET {{url}}/customers/P4xa3E
+
+### GET CUSTOMER
+GET {{url}}/customers/jwiEs3
+
+### GET NON-EXISTENT CUSTOMER
+GET {{url}}/customers/nnnnn
+
+### DELETE CUSTOMER
+DELETE {{url}}/customers/ypauou
+
+### DELETE NON-EXISTENT CUSTOMER
+DELETE {{url}}/customers/nnnnn
+
+### CREATE CUSTOMER
+POST {{url}}/customers
+content-type: application/json
+
+{
+    "firstName": "Mario",
+    "lastName": "Rossi",
+    "address": "Via Roma 1",
+    "zipcode": "00100",
+    "city": "Roma"
+}
+
+### UPDATE CUSTOMER
+PUT {{url}}/customers
+content-type: application/json
+
+{
+    "suuid": "Cu1234",
+    "firstName": "Luca",
+    "lastName": "Bianchi",
+    "address": "Via Milano 5",
+    "zipcode": "20100",
+    "city": "Milano"
+}
+
+

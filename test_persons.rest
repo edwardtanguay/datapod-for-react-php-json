@@ -4,7 +4,7 @@
 GET {{url}}/persons
 
 ### GET PERSON
-GET {{url}}/persons/gPD6pT
+GET {{url}}/persons/E3GsVl
 
 ### GET PERSON
 GET {{url}}/persons/jwiEs3
@@ -13,7 +13,7 @@ GET {{url}}/persons/jwiEs3
 GET {{url}}/persons/nnnnn
 
 ### DELETE PERSON
-DELETE {{url}}/persons/gPD6pT
+DELETE {{url}}/persons/ypauou
 
 ### DELETE NON-EXISTENT PERSON
 DELETE {{url}}/persons/nnnnn
@@ -23,7 +23,7 @@ POST {{url}}/persons
 content-type: application/json
 	
 {
-	"firstName": "Emily222",
+	"firstName": "Emily",
 	"lastName": "Christensen",
 	"age": 51
 }

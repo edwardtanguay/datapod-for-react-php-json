@@ -10,4 +10,4 @@ $person = (object) [
 ];
 
 $persons[] = $person;
-qfil::saveToJsonFile($persons, "../parseddata/persons.json");
+qfil::saveToJsonFile($persons, "../data/persons.json");

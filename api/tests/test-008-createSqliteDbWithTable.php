@@ -1,7 +1,7 @@
 <?php
 // create_persons_table.php
 
-$dbPath = "../parseddata/main.sqlite";
+$dbPath = "../data/main.sqlite";
 
 try {
     // Create directory if it doesn't exist

@@ -1,10 +1,10 @@
 <?php
-require_once '../scripts/qtools/qfil.php';
-require_once '../scripts/qtools/qstr.php';
+require_once __DIR__ . '/../../scripts/qtools/qfil.php';
+require_once __DIR__ . '/../../scripts/qtools/qstr.php';
 
 class persons_model
 {
-	private static $dataSourcePathAndFileName = "../parseddata/persons.json";
+	private static $dataSourcePathAndFileName = "../data/persons.json";
 
 	public static function get_all_persons(): array
 	{

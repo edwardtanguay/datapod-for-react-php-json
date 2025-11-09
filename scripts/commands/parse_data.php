@@ -3,7 +3,7 @@ require_once '../qtools/qfil.php';
 require_once '../qtools/qcli.php';
 require_once '../qtools/qstr.php';
 
-$lines = qfil::getLinesFromFile("../../data/flashcards.txt");
+$lines = qfil::getLinesFromFile("../../dataraw/flashcards.txt");
 qcli::message("Read " . count($lines) . " lines from flashcards.txt");
 
 $flashcards = [];
@@ -32,7 +32,7 @@ qcli::message("Generated " . count($flashcards) . " flashcards");
 
 // Save flashcards to JSON file
 $jsonData = json_encode($flashcards, JSON_PRETTY_PRINT);
-if (file_put_contents("../../parseddata/flashcards.json", $jsonData) === false) {
+if (file_put_contents("../../data/flashcards.json", $jsonData) === false) {
 	qcli::message("Error writing flashcards to JSON file", "error");
 } else {
 	qcli::message("Wrote " . count($flashcards) . " flashcards to flashcards.json");
