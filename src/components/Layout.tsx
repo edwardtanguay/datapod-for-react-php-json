@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { Menu, X, Home, FileText, Info, Box } from "lucide-react";
+import { Menu, X, Home, Info, Box } from "lucide-react";
 
 export default function Layout() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,6 @@ export default function Layout() {
 		{ name: "Customers", path: "/customers", icon: Box },
 		{ name: "Articles", path: "/articles", icon: Box },
 		{ name: "Orders", path: "/orders", icon: Box },
-		{ name: "Documents", path: "/documents", icon: FileText },
 		{ name: "About", path: "/about", icon: Info },
 	];
 
@@ -20,7 +19,7 @@ export default function Layout() {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex justify-between items-center h-16">
 						<h1 className="text-xl sm:text-2xl font-bold text-slate-800 mr-3">
-							Info Site
+							Datapod PHP-React
 						</h1>
 
 						<nav className="hidden lg:flex space-x-1">
@@ -58,8 +57,8 @@ export default function Layout() {
 
 				<div
 					className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen
-							? "max-h-[600px] opacity-100"
-							: "max-h-0 opacity-0"
+						? "max-h-[600px] opacity-100"
+						: "max-h-0 opacity-0"
 						}`}
 				>
 					<nav className="px-4 pb-4 space-y-1 bg-white border-t border-slate-200">

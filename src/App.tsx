@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./components/Layout";
 import { PageAbout } from './pages/PageAbout';
-import { PageDocuments } from './pages/PageDocuments';
 import { PageWelcome } from './pages/PageWelcome';
 import { PageArticles } from "./pages/PageArticles";
 import { PageOrders } from "./pages/PageOrders";
@@ -24,7 +23,6 @@ export const App = () => {
           <Route path="customers" element={<PageCustomers />} />
           <Route path="articles" element={<PageArticles />} />
           <Route path="orders" element={<PageOrders />} />
-          <Route path="documents" element={<PageDocuments />} />
           <Route path="about" element={<PageAbout />} />
         </Route>
       </Routes>

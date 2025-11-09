@@ -1,25 +1,33 @@
-# datapod-for-react-php-json
+# datapod-php-react
 
-This is a simple datapod template for a local site that displays data from a JSON file, which is created by a PHP script that parses a text file.
+This is a site that accesses a SQLite database file via a React frontend CRUD sites calling a PHP API in the backend.
 
-<img width="1486" height="719" alt="grafik" src="https://github.com/user-attachments/assets/c5e49a36-2b4a-4000-be0c-85e1441c1ec0" />
+![demo-datapod-php-react](https://github.com/user-attachments/assets/05bd52d4-17c5-4262-9672-5532f4027984)
 
 ## Compatibility
 
 -   ✔️ tested on Windows
 -   ✔️ tested on Ubuntu
 
-## API
+## Prerequisites
 
--   `npm run api`
+-   PHP 7.3 or higher
+-   SQLite enabled in php.ini
+-   Node 18 or higher
+-   [DB Browser for SQLite](https://sqlitebrowser.org/) (or equivalent db manager) to view SQLite database directory
+
+## Setup
+
+-   clone this repository
+-   open with VSCode or other editor
+-   `npm i`
+-   `npm run dev` (starts both API and website, browser will open automatically)
+
+## API testing
+
 -   install [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 -   test API with file: `test.rest`
--   API currently has GETs, PUT, DELETE and POST for model persons that reads/writes to datasource
--   datasource can currently be
-    -   JSON file
-    -   SQLite database
--    switch datasource at top of file: `api/index.php`
 
-## More Datapod templates and sites
+## See more Datapod projects here:
 
 https://datapod-tanguay-eu.vercel.app

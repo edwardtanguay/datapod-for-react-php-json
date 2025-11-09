@@ -1,23 +1,16 @@
 import { Info } from 'lucide-react';
-import { InfoBox } from '../components/InfoBox';
-import { InfoBoxWrapper } from '../components/InfoBoxWrapper';
 import ContentWrapper from '../components/ContentWrapper';
 
 export const PageAbout = () => {
 	return (
-		<ContentWrapper icon={<Info size={32} className="text-slate-800" />} title="About" >
-			<p>
-				This is the about page.
+		<ContentWrapper icon={<Info size={32} className="text-slate-800" />} title="About this site" >
+			<p className="mb-3">
+				This site is a Datapod framework that uses PHP as a CLI language and API in the backend, and React/TypeScript/Tailwind as the frontend.
 			</p>
-			<InfoBoxWrapper>
-				<>
-					{[1, 2, 3].map((num) => (
-						<InfoBox key={num} title={`About Info ${num}`}>
-							<p>An piece of information.</p>
-						</InfoBox>
-					))}
-				</>
-			</InfoBoxWrapper>
+			<p className="mb-3">
+				To explore other Datapods that use other languages, see <a href="https://datapod-tanguay-eu.vercel.app" target="_blank" rel="noreferrer" className="text-blue-600 underline">The Datapod Project</a>.
+			</p>
+			<p>The Datapod Project is an open-source project created by Edward Tanguay.</p>
 		</ContentWrapper>
 	);
 }

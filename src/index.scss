@@ -3,11 +3,31 @@
 @tailwind utilities;
 
 @layer base {
-	h1 {
-		font-variant: small-caps;
+	h2 {
+		@apply text-2xl font-semibold text-gray-800 mb-4;
 	}
+
+
 	.btn-small {
 		@apply px-2 py-1 text-sm text-gray-700 bg-gray-200 border border-gray-300 rounded-md hover:bg-red-300;
+	}
+
+	.content {
+		h3 {
+			@apply text-2xl font-semibold text-gray-800 mt-4 mb-2;
+		}
+
+		a {
+			@apply text-blue-600 underline hover:text-blue-800;
+		}
+
+		ul {
+			@apply list-disc list-inside mt-2 ml-6;
+
+			li {
+				@apply mb-2;
+			}
+		}
 	}
 }
 
@@ -24,6 +44,7 @@ body {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
